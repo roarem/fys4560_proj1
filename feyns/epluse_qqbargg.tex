@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{eeqqgg}
+  \begin{fmfgraph*}(10,4)
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3,o4}
+    \fmf{dashes, label=$\gamma,,Z$}{v1,v2}
+    \fmf{fermion}{i1,v1}
+    \fmf{fermion}{v1,i2}
+    \fmf{plain}{v2,v3}
+    \fmf{plain}{v2,v4}
+    \fmf{fermion}{o1,v3}
+    \fmf{fermion}{v4,o4}
+    \fmffreeze
+    \fmf{curly}{v3,o2}
+    \fmf{curly}{v4,o3}
+    \fmflabel{$e^-$}{i1}
+    \fmflabel{$e^+$}{i2}
+    \fmflabel{$q$}{o4}
+    \fmflabel{$\bar{q}$}{o1}
+    \fmflabel{$g$}{o2}
+    \fmflabel{$g$}{o3}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}
