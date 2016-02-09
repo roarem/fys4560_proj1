@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{eeqqgg}
+  \begin{fmfgraph*}(10,4)
+    \fmfstraight
+
+    \fmfleft{tau}
+    \fmfright{taun,mu,mun}
+
+    \fmf{fermion,tension=5}{wi,tau}
+    \fmf{fermion}{taun,wi}
+    \fmf{dashes,label=$W^+$}{wi,wo}
+    \fmf{fermion}{mu,wo}
+    \fmf{fermion}{wo,mun}
+
+    \fmf{phantom}{wi,mun}
+
+    \fmflabel{$\tau^+$}{tau}
+    \fmflabel{$\bar{\nu_{\tau}}$}{taun}
+    \fmflabel{$\mu^+$}{mu}
+    \fmflabel{$\nu_{\mu/e}$}{mun}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

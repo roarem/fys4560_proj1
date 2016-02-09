@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{eeqqgg}
+  \begin{fmfgraph*}(10,4)
+    \fmfstraight
+
+    \fmfleft{ie,ine}
+    \fmfright{one,op,oe}
+
+    \fmf{fermion}{ie,iw1,one}
+    \fmf{dashes,label=$W^-$}{iw1,ow2}
+    \fmf{wiggly}{ow2,op}
+    \fmf{dashes,label=$W^+$}{iw3,ow2}
+    \fmf{fermion}{ine,iw3,oe}
+
+    \fmflabel{$e^-$}{ie}
+    \fmflabel{$\gamma$}{op}
+    \fmflabel{$\nu_e$}{ine}
+    \fmflabel{$\nu_e$}{one}
+    \fmflabel{$e^-$}{oe}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

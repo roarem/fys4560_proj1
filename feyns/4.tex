@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{eeqqgg}
+  \begin{fmfgraph*}(10,4)
+    \fmfstraight
+
+    \fmfleft{iu1,iu2,id,iad,iau1,iau2}
+    \fmfright{ou1,ou2,oal,ol,oau1,oau2}
+    
+    \fmf{fermion}{id,ipz}
+    \fmf{fermion}{ipz,iad}
+    \fmf{wiggly}{ipz,opz}
+    \fmf{fermion}{oal,opz}
+    \fmf{fermion}{opz,ol}
+
+    \fmf{fermion}{iu1,ou1}
+    \fmf{fermion}{iu2,ou2}
+    \fmf{fermion}{oau1,iau1}
+    \fmf{fermion}{oau2,iau2}
+
+    \fmflabel{$d$}{id}
+    \fmflabel{$u$}{iu1}
+    \fmflabel{$u$}{iu2}
+    \fmflabel{$u$}{ou1}
+    \fmflabel{$u$}{ou2}
+    \fmflabel{$\bar{d}$}{iad}
+    \fmflabel{$\bar{u}$}{iau1}
+    \fmflabel{$\bar{u}$}{iau2}
+    \fmflabel{$\bar{u}$}{oau1}
+    \fmflabel{$\bar{u}$}{oau2}
+    \fmflabel{$l^+$}{oal}
+    \fmflabel{$l^-$}{ol}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

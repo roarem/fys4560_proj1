@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{eeqqgg}
+  \begin{fmfgraph*}(10,4)
+    \fmfstraight
+
+    \fmfleft{ie,iae}
+    \fmfright{ol,oal}
+
+    \fmf{fermion}{ie,v}
+    \fmf{fermion}{v,iae}
+    \fmf{dashes,label=$\gamma,,Z,,H$}{v,vv}
+    \fmf{fermion}{vv,ol}
+    \fmf{fermion}{oal,vv}
+
+    \fmflabel{$e^-$}{ie}
+    \fmflabel{$e^+$}{iae}
+    \fmflabel{$\tilde{l}^-$}{ol}
+    \fmflabel{$\tilde{l}^+$}{oal}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}
