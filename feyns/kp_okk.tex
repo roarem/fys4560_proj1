@@ -7,7 +7,7 @@
 \begin{figure*}[h]
 \begin{fmffile}{eeqqgg}
   \begin{fmfgraph*}(10,4)
-%
+    \fmfstraight
     \fmfleft{is,iau,iu1,iu2,id}
     \fmfright{os1,os2,os3,oas1,ou,oas2,od}
 
@@ -20,9 +20,10 @@
     \fmf{fermion}{pz2,os2}
     \fmf{fermion}{oas1,pz2}
     
-    \fmf{fermion}{iu2,g1}
-    \fmf{fermion}{g1,ou}
+    \fmf{fermion,tension=5}{iu2,g1}
+    \fmf{fermion,tension=5}{g1,ou}
     \fmf{curly}{g1,g2}
+    \fmf{phantom}{g2,iau}
     \fmf{fermion}{g2,os3}
     \fmf{fermion}{oas2,g2}
 

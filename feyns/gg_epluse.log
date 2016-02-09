@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.20)  9 FEB 2016 08:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.20)  9 FEB 2016 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -204,19 +204,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./gg_epluse.aux) ) 
 Here is how much of TeX's memory you used:
- 2137 strings out of 493054
- 29021 string characters out of 6140586
+ 2151 strings out of 493054
+ 29119 string characters out of 6140586
  97461 words of memory out of 5000000
- 5659 multiletter control sequences out of 15000+600000
+ 5673 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,32p,302b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,32p,302b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb>
-Output written on gg_epluse.pdf (1 page, 32019 bytes).
+Output written on gg_epluse.pdf (1 page, 32160 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

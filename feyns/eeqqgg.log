@@ -1,4 +1,4 @@
-This is MetaPost, version 1.999 (TeX Live 2015/Arch Linux) (kpathsea version 6.2.1)  9 FEB 2016 09:39
+This is MetaPost, version 1.999 (TeX Live 2015/Arch Linux) (kpathsea version 6.2.1)  9 FEB 2016 16:21
 **eeqqgg
 (/usr/share/texmf-dist/metapost/base/mpost.mp
 (/usr/share/texmf-dist/metapost/base/plain.mp
@@ -6,9 +6,9 @@ Preloading the plain mem file, version 1.005) ) (./eeqqgg.mp
 (/usr/share/texmf-dist/metapost/feynmf/feynmp.mp) [1] )
  
 Here is how much of MetaPost's memory you used:
- 478 strings using 7585 characters
- 1849488 bytes of node memory
- 931 symbolic tokens
+ 490 strings using 7928 characters
+ 1877080 bytes of node memory
+ 928 symbolic tokens
  14i,77n,28p,104b,3f stack positions out of 16i,96n,32p,200b,4f
 1 output file written: eeqqgg.1
 
