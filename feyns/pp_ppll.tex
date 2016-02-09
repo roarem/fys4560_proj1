@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{eeqqgg}
+  \begin{fmfgraph*}(10,4)
+    \fmfstraight
+    \fmfleft{iu1,iu2,id1,iu3,iu4,id2}
+    \fmfright{ou1,ou2,od1,ol1,ol2,ou3,ou4,od2}
+
+
+    \fmf{fermion}{iu1,ou1}
+    \fmf{fermion}{iu2,ou2}
+    \fmf{fermion}{iu4,ou4}
+    \fmf{fermion}{id2,od2}
+
+    \fmf{fermion,tension=5}{id1,vw1,ou3}
+    \fmf{dashes}{vw1,vw3}
+    \fmf{dashes}{vw2,vw3}
+    \fmf{fermion}{iu3,vw2,od1}
+    \fmf{dashes,label=$\gamma,,Z$}{vw3,pz}
+    \fmf{fermion}{pz,ol1}
+    \fmf{fermion}{ol2,pz}
+
+
+
+    \fmflabel{$u$}{iu1}
+    \fmflabel{$u$}{iu2}
+    \fmflabel{$u$}{iu3}
+    \fmflabel{$u$}{iu4}
+    \fmflabel{$d$}{id1}
+    \fmflabel{$d$}{id2}
+    \fmflabel{$u$}{ou1}
+    \fmflabel{$u$}{ou2}
+    \fmflabel{$u$}{ou3}
+    \fmflabel{$u$}{ou4}
+    \fmflabel{$d$}{od1}
+    \fmflabel{$d$}{od2}
+    \fmflabel{$l^+$}{ol2}
+    \fmflabel{$l^-$}{ol1}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}
