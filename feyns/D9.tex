@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d9}
+  \begin{fmfgraph*}(10,4)
+    \fmfstraight
+    \fmfleft{iem,iep}
+    \fmfright{oH2,oy,oH1}
+    
+    \fmf{fermion}{iem,Z1}
+    \fmf{fermion}{Z1,iep}
+    
+    \fmf{photon, label=$Z$, label.side=left}{Z1,Z2}
+    \fmf{phantom}{Z2,oy}
+    \fmffreeze
+    
+    \fmf{fermion,left=0.5, label=$q$}{Z2,q1}
+    \fmf{dashes}{q1,oH1}
+    \fmf{plain}{q1,v2}
+    \fmf{wiggly}{v2,oy}
+    \fmf{plain}{q2,v2}
+    \fmf{dashes}{q2,oH2}
+    \fmf{fermion,left=0.5, label=$\bar{q}$, label.side=right}{q2,Z2}
+
+	
+	\fmflabel{$\gamma$}{oy}
+ 	\fmflabel{H}{oH1}
+	\fmflabel{H}{oH2}
+	\fmflabel{$e^+$}{iep}
+	\fmflabel{$e^-$}{iem}
+    
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

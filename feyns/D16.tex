@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d16}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight	
+	\fmfleft{iaq,iq}
+	\fmfright{og2,oep,oem,og1}
+	
+	%inbound quarks
+	\fmf{fermion}{iq,v1}
+	\fmf{fermion}{v1,Z1}
+	\fmf{fermion}{v2,iaq}
+	\fmf{fermion}{Z1,v2}
+	
+	%emitted gluons
+	\fmf{gluon,tension=0}{v1,og1}
+	\fmf{gluon,tension=0}{v2,og2}
+	
+	%int vector boson line
+	\fmf{photon,tension=0.7,label=$Z$}{Z1,Z2}
+	
+	%fermion pair product
+	\fmf{fermion}{Z2,oem}
+	\fmf{fermion}{oep,Z2}
+	
+	
+	\fmflabel{$q$}{iq}
+	\fmflabel{$\bar{q}$}{iaq}
+	\fmflabel{$g$}{og1}
+	\fmflabel{$g$}{og2}
+	\fmflabel{$e^+$}{oep}
+	\fmflabel{$e^-$}{oem}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

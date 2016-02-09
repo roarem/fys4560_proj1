@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d17}
+  \begin{fmfgraph*}(10,4)
+%
+	
+	\fmfleft{ig2,ig1}
+	\fmfright{oZ,oy}
+	
+	%inbound gluons
+	\fmf{gluon}{ig1,v1}
+	\fmf{gluon}{ig2,v2}
+	
+	%first triangle
+	\fmf{fermion,tension=0.9,label=$q$,label.side=left}{v1,H1}
+	\fmf{fermion,tension=0.9,label=$\bar{q}$}{H1,v2}
+	\fmf{fermion,tension=0.6}{v2,v1}
+	
+	%higgs line
+	\fmf{dashes,tension=0.7,label=H}{H1,H2}
+	
+	%second triangle
+	\fmf{fermion,tension=0.9,label=$q$,label.side=left}{H2,v3}
+	\fmf{fermion,tension=0.6}{v3,v4}
+	\fmf{fermion,tension=0.9,label=$\bar{q}$}{v4,H2}
+	
+	%final product lines
+	\fmf{photon}{v3,oy}
+	\fmf{photon}{v4,oZ}
+	
+	\fmflabel{$\gamma$}{oy}
+	\fmflabel{$Z$}{oZ}
+	\fmflabel{$g$}{ig1}
+	\fmflabel{$g$}{ig2}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

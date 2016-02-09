@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d14}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight
+	
+	\fmfleft{ig2,ig1}
+	\fmfright{oat,oH2,oH1,ot}
+	
+	%inbound gluons
+	\fmf{gluon}{ig1,v1}
+	\fmf{gluon}{ig2,v2}
+	
+	%first triangle
+	\fmf{fermion,tension=1.5,label=$q$}{v1,Z1}
+	\fmf{fermion,tension=1.5,label=$\bar{q}$,label.side=left}{Z1,v2}
+	\fmf{fermion,tension=0.1}{v2,v1}
+	
+	%int vector boson line
+	\fmf{photon,tension=1.5,label=$Z$,label.side=left}{Z1,Z2}
+	
+	%top pair production
+	\fmf{fermion}{Z2,v3}
+	\fmf{fermion}{v3,ot}
+	\fmf{fermion}{oat,v4}
+	\fmf{fermion}{v4,Z2}
+	
+	%interaction lines
+	\fmf{photon,tension=0.5,label=$Z$}{v3,v5}
+	\fmf{photon,tension=0.5,label=$Z$}{v4,v5}
+	
+	%higgs production
+	\fmf{dashes}{v5,oH1}
+	\fmf{dashes}{v5,oH2}
+	
+	\fmflabel{$g$}{ig1}
+	\fmflabel{$g$}{ig2}
+	\fmflabel{$t$}{ot}
+	\fmflabel{$\bar{t}$}{oat}
+	\fmflabel{H}{oH1}
+	\fmflabel{H}{oH2}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}
