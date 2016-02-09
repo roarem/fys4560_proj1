@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d13}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight
+	
+	\fmfleft{iep,iem}
+	\fmfright{oan,oy2,oy1,on}
+	
+	%inbound fermions
+	\fmf{fermion}{iem,Z1}
+	\fmf{fermion}{Z1,iep}
+	
+	%int vector boson line
+	\fmf{photon,tension=1.8,label=$\gamma,,Z$,label.side=left}{Z1,Z2}
+	
+	%lepton pair production
+	\fmf{fermion,label=$l^-$,label.side=left}{Z2,v1}
+	\fmf{fermion,label=$l^+$,label.side=left}{v2,Z2}
+	
+	%lepton interaction
+	\fmf{photon,label=$W^-$}{v1,v3}
+	\fmf{photon,label=$W$}{v3,v4}
+	\fmf{photon,label=$W^+$}{v2,v4}
+	
+	%photon production
+	\fmf{photon}{v3,oy1}
+	\fmf{photon}{v4,oy2}
+	
+	%neutrino lines
+	\fmf{fermion}{v1,on}
+	\fmf{fermion}{v2,oan}
+	
+	\fmflabel{$e^+$}{iep}
+	\fmflabel{$e^-$}{iem}
+	\fmflabel{$\nu$}{on}
+	\fmflabel{$\bar{\nu}$}{oan}
+	\fmflabel{$\gamma$}{oy1}
+	\fmflabel{$\gamma$}{oy2}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

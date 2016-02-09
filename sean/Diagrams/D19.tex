@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d19}
+  \begin{fmfgraph*}(10,4)
+%
+	
+	\fmfleft{iau,ic}
+	\fmfright{oac,ou}
+	
+	%top line
+	\fmf{fermion}{ic,v1}
+	\fmf{fermion, label=$d$,label.side=left}{v1,v2}
+	\fmf{fermion}{v2,ou}
+	
+	%bottom line
+	\fmf{fermion}{oac,v4}
+	\fmf{fermion, label=$\bar{d}$,label.side=left}{v4,v3}
+	\fmf{fermion}{v3,iau}
+	
+	%interaction lines
+	\fmf{photon,tension=0.2,label=$W^+$}{v1,v3}
+	\fmf{photon,tension=0.2,label=$W^-$,label.side=left}{v2,v4}
+	
+	\fmflabel{$c$}{ic}
+	\fmflabel{$\bar{u}$}{iau}
+	\fmflabel{$u$}{ou}
+	\fmflabel{$\bar{c}$}{oac}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

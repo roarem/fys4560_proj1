@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d6}
+  \begin{fmfgraph*}(10,4)
+%
+    \fmfleft{id,iu2,iu1,iau,is}
+    \fmfright{od,oas2,ou,oas1,os3,os2,os1}
+
+
+    \fmf{fermion}{is,os1}
+
+    \fmf{fermion}{pz1,iau}
+    \fmf{fermion}{iu1,pz1}
+    \fmf{dashes,label=$\gamma,,Z$}{pz1,pz2}
+    \fmf{fermion}{pz2,g1}
+    \fmf{fermion}{g1,os2}
+    \fmf{curly}{g1,g2}
+    \fmf{fermion}{g2,os3}
+    \fmf{fermion}{oas1,g2}
+    
+    \fmf{fermion}{pz2,oas2}
+    
+    \fmf{fermion}{iu2,ou}
+    \fmf{fermion}{g2,os3}
+
+    \fmf{fermion}{id,od}
+
+    \fmflabel{$s$}{is}
+    \fmflabel{$\bar{u}$}{iau}
+    \fmflabel{$u$}{iu1}
+    \fmflabel{$u$}{iu2}
+    \fmflabel{$d$}{id}
+    \fmflabel{$s$}{os1}
+    \fmflabel{$s$}{os2}
+    \fmflabel{$s$}{os3}
+    \fmflabel{$\bar{s}$}{oas1}
+    \fmflabel{$u$}{ou}
+    \fmflabel{$\bar{s}$}{oas2}
+    \fmflabel{$d$}{od}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

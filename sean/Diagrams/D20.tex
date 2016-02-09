@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d20}
+  \begin{fmfgraph*}(10,4)
+%
+    \fmfleft{iem,iep}
+    \fmfright{oat,oZ,ot}
+    
+    \fmf{fermion}{iem,Z1}
+    \fmf{fermion}{Z1,iep}
+    
+    \fmf{photon, label=$\gamma,,Z$, label.side=left}{Z1,Z2}
+    
+    \fmf{fermion}{oat,Z2}
+    \fmf{fermion}{Z2,v1}
+    \fmf{fermion}{v1,ot}
+    
+    \fmf{photon}{v1,oZ}
+    
+    \fmflabel{$e^+$}{iep}
+    \fmflabel{$e^-$}{iem}
+    \fmflabel{$Z$}{oZ}
+    \fmflabel{$t$}{ot}
+    \fmflabel{$\bar{t}$}{oat}
+    
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

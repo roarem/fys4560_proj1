@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d12}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight
+	
+	\fmfleft{iep,iem}
+	\fmfright{oan,oy2,oy1,on}
+	
+	%inbound fermions
+	\fmf{fermion}{iem,Z1}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}
