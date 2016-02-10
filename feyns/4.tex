@@ -2,7 +2,7 @@
 \usepackage{feynmp-auto}
 \usepackage[margin=1cm]{geometry}
 \begin{document}
-\pagenumbering{gobble}
+%\thispagestyle{empty}
 \unitlength = 1cm
 \begin{figure*}[h]
 \begin{fmffile}{eeqqgg}
@@ -14,7 +14,7 @@
     
     \fmf{fermion}{id,ipz}
     \fmf{fermion}{ipz,iad}
-    \fmf{wiggly}{ipz,opz}
+    \fmf{dashes,label=$\gamma,,Z$}{ipz,opz}
     \fmf{fermion}{oal,opz}
     \fmf{fermion}{opz,ol}
 

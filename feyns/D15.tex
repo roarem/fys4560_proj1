@@ -18,12 +18,12 @@
 	\fmf{fermion}{Z1,iep}
 	
 	%int vector boson line
-	\fmf{photon,tension=1.8,label=$Z$,label.side=left}{Z1,Z2}
+	\fmf{dashes,tension=1.8,label=$Z$,label.side=left}{Z1,Z2}
 	
 	%bottom-quark lines
-	\fmf{fermion,tension=2}{Z2,v1}
+	\fmf{fermion,label=$\Upsilon$,tension=2,label.side=right}{Z2,v1}
 	\fmf{fermion,tension=2}{v1,ob}
-	\fmf{fermion}{oab,Z2}
+	\fmf{fermion}{oab,v3,Z2}
 	
 	%gluon emission
 	\fmf{gluon,tension=0.3}{v1,v2}
@@ -35,7 +35,7 @@
 	\fmflabel{$e^+$}{iep}
 	\fmflabel{$e^-$}{iem}
 	\fmflabel{$b$}{ob}
-	\fmflabel{$\bar{d}$}{oab}
+	\fmflabel{$\bar{b}$}{oab}
 	\fmflabel{$d$}{od}
 	\fmflabel{$\bar{d}$}{oad}
 	

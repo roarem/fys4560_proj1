@@ -14,17 +14,20 @@
     \fmf{fermion}{iem,Z1}
     \fmf{fermion}{Z1,iep}
     
-    \fmf{photon, label=$Z$, label.side=left}{Z1,Z2}
-    \fmf{phantom}{Z2,oy}
-    \fmffreeze
+    \fmf{dashes, label=$Z$, label.side=left}{Z1,Z2}
+    \fmf{phantom}{iem,oy}
     
-    \fmf{fermion,left=0.5, label=$q$}{Z2,q1}
+    \fmf{fermion,label=$q$, label.side=left}{Z2,q1}
     \fmf{dashes}{q1,oH1}
-    \fmf{plain}{q1,v2}
-    \fmf{wiggly}{v2,oy}
-    \fmf{plain}{q2,v2}
     \fmf{dashes}{q2,oH2}
-    \fmf{fermion,left=0.5, label=$\bar{q}$, label.side=right}{q2,Z2}
+    \fmf{fermion,label=$\bar{q}$, label.side=left}{q2,Z2}
+
+    \fmffreeze
+    \fmf{plain}{q1,v2}
+    \fmf{plain}{q2,v2}
+
+    \fmffreeze
+    \fmf{wiggly,tension=0.3}{v2,oy}
 
 	
 	\fmflabel{$\gamma$}{oy}
