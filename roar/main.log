@@ -1,0 +1,404 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.20)  10 FEB 2016 14:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\@input{preamble.aux}
+\openout2 = `preamble.aux'.
+
+(./preamble.tex (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count91
+)
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
+\c@subfigure=\count92
+\c@subtable=\count93
+)) (./main.aux (./1.aux) (./2.aux) (./3.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=738.0645pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-80.81725pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count94
+\scratchdimen=\dimen120
+\scratchbox=\box26
+\nofMPsegments=\count95
+\nofMParguments=\count96
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count97
+\MPscratchDim=\dimen121
+\MPnumerator=\count98
+\makeMPintoPDFobject=\count99
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\openout2 = `1.aux'.
+
+ (./1.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+
+<../dia/01.pdf, id=1, 281.05pt x 136.51pt>
+File: ../dia/01.pdf Graphic file (type pdf)
+ <use ../dia/01.pdf>
+Package pdftex.def Info: ../dia/01.pdf used on input line 27.
+(pdftex.def)             Requested size: 167.21855pt x 81.21924pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+
+<../dia/02.pdf, id=2, 254.9525pt x 136.51pt>
+File: ../dia/02.pdf Graphic file (type pdf)
+ <use ../dia/02.pdf>
+Package pdftex.def Info: ../dia/02.pdf used on input line 33.
+(pdftex.def)             Requested size: 167.21855pt x 89.53864pt.
+
+<../dia/03.pdf, id=3, 317.185pt x 128.48pt>
+File: ../dia/03.pdf Graphic file (type pdf)
+ <use ../dia/03.pdf>
+Package pdftex.def Info: ../dia/03.pdf used on input line 39.
+(pdftex.def)             Requested size: 167.21855pt x 67.7353pt.
+
+<../dia/04.pdf, id=4, 311.1625pt x 124.465pt>
+File: ../dia/04.pdf Graphic file (type pdf)
+ <use ../dia/04.pdf>
+Package pdftex.def Info: ../dia/04.pdf used on input line 46.
+(pdftex.def)             Requested size: 167.21855pt x 66.88722pt.
+
+<../dia/05.pdf, id=5, 326.21875pt x 126.4725pt>
+File: ../dia/05.pdf Graphic file (type pdf)
+ <use ../dia/05.pdf>
+Package pdftex.def Info: ../dia/05.pdf used on input line 52.
+(pdftex.def)             Requested size: 167.21855pt x 64.83203pt.
+
+<../dia/06.pdf, id=6, 309.155pt x 125.46875pt>
+File: ../dia/06.pdf Graphic file (type pdf)
+ <use ../dia/06.pdf>
+Package pdftex.def Info: ../dia/06.pdf used on input line 58.
+(pdftex.def)             Requested size: 167.21855pt x 67.86697pt.
+
+<../dia/07.pdf, id=7, 318.18875pt x 126.4725pt>
+File: ../dia/07.pdf Graphic file (type pdf)
+ <use ../dia/07.pdf>
+Package pdftex.def Info: ../dia/07.pdf used on input line 65.
+(pdftex.def)             Requested size: 167.21855pt x 66.46466pt.
+
+<../dia/08.pdf, id=8, 312.16624pt x 125.46875pt>
+File: ../dia/08.pdf Graphic file (type pdf)
+ <use ../dia/08.pdf>
+Package pdftex.def Info: ../dia/08.pdf used on input line 71.
+(pdftex.def)             Requested size: 167.21855pt x 67.2103pt.
+
+<../dia/09.pdf, id=9, 315.1775pt x 127.47626pt>
+File: ../dia/09.pdf Graphic file (type pdf)
+ <use ../dia/09.pdf>
+Package pdftex.def Info: ../dia/09.pdf used on input line 77.
+(pdftex.def)             Requested size: 167.21855pt x 67.63211pt.
+
+<../dia/10.pdf, id=10, 280.04625pt x 136.51pt>
+File: ../dia/10.pdf Graphic file (type pdf)
+ <use ../dia/10.pdf>
+Package pdftex.def Info: ../dia/10.pdf used on input line 84.
+(pdftex.def)             Requested size: 167.21855pt x 81.51501pt.
+
+<../dia/11.pdf, id=11, 315.1775pt x 127.47626pt>
+File: ../dia/11.pdf Graphic file (type pdf)
+ <use ../dia/11.pdf>
+Package pdftex.def Info: ../dia/11.pdf used on input line 90.
+(pdftex.def)             Requested size: 167.21855pt x 67.63211pt.
+
+<../dia/12.pdf, id=12, 369.38pt x 126.4725pt>
+File: ../dia/12.pdf Graphic file (type pdf)
+ <use ../dia/12.pdf>
+Package pdftex.def Info: ../dia/12.pdf used on input line 96.
+(pdftex.def)             Requested size: 167.21855pt x 57.25366pt.
+
+<../dia/13.pdf, id=13, 314.17375pt x 126.4725pt>
+File: ../dia/13.pdf Graphic file (type pdf)
+ <use ../dia/13.pdf>
+Package pdftex.def Info: ../dia/13.pdf used on input line 103.
+(pdftex.def)             Requested size: 167.21855pt x 67.31378pt.
+
+<../dia/14.pdf, id=14, 309.155pt x 126.4725pt>
+File: ../dia/14.pdf Graphic file (type pdf)
+ <use ../dia/14.pdf>
+Package pdftex.def Info: ../dia/14.pdf used on input line 109.
+(pdftex.def)             Requested size: 167.21855pt x 68.40991pt.
+
+<../dia/15.pdf, id=15, 314.17375pt x 127.47626pt>
+File: ../dia/15.pdf Graphic file (type pdf)
+ <use ../dia/15.pdf>
+Package pdftex.def Info: ../dia/15.pdf used on input line 115.
+(pdftex.def)             Requested size: 167.21855pt x 67.84802pt.
+
+<../dia/16.pdf, id=16, 311.1625pt x 126.4725pt>
+File: ../dia/16.pdf Graphic file (type pdf)
+ <use ../dia/16.pdf>
+Package pdftex.def Info: ../dia/16.pdf used on input line 122.
+(pdftex.def)             Requested size: 167.21855pt x 67.96605pt.
+
+<../dia/17.pdf, id=17, 250.9375pt x 133.49875pt>
+File: ../dia/17.pdf Graphic file (type pdf)
+ <use ../dia/17.pdf>
+Package pdftex.def Info: ../dia/17.pdf used on input line 128.
+(pdftex.def)             Requested size: 167.21855pt x 88.96498pt.
+
+<../dia/18.pdf, id=18, 316.18124pt x 124.465pt>
+File: ../dia/18.pdf Graphic file (type pdf)
+ <use ../dia/18.pdf>
+Package pdftex.def Info: ../dia/18.pdf used on input line 134.
+(pdftex.def)             Requested size: 167.21855pt x 65.82748pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../dia/19.pdf, id=19, 250.9375pt x 142.5325pt>
+File: ../dia/19.pdf Graphic file (type pdf)
+ <use ../dia/19.pdf>
+Package pdftex.def Info: ../dia/19.pdf used on input line 142.
+(pdftex.def)             Requested size: 167.21855pt x 94.98517pt.
+
+<../dia/20.pdf, id=20, 315.1775pt x 127.47626pt>
+File: ../dia/20.pdf Graphic file (type pdf)
+ <use ../dia/20.pdf>
+Package pdftex.def Info: ../dia/20.pdf used on input line 148.
+(pdftex.def)             Requested size: 167.21855pt x 67.63211pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [1
+
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../dia/01.pdf> <../dia
+/02.pdf> <../dia/03.pdf> <../dia/04.pdf> <../dia/05.pdf> <../dia/06.pdf> <../di
+a/07.pdf> <../dia/08.pdf> <../dia/09.pdf> <../dia/10.pdf> <../dia/11.pdf> <../d
+ia/12.pdf> <../dia/13.pdf> <../dia/14.pdf> <../dia/15.pdf> <../dia/16.pdf> <../
+dia/17.pdf> <../dia/18.pdf>] [3 <../dia/19.pdf> <../dia/20.pdf>] [4
+
+]
+\openout2 = `2.aux'.
+
+
+(./2.tex) [5
+
+
+]
+\openout2 = `3.aux'.
+
+ (./3.tex) (./main.aux (./1.aux) (./2.aux) (./3.aux)) ) 
+Here is how much of TeX's memory you used:
+ 3257 strings out of 493054
+ 50043 string characters out of 6140586
+ 122293 words of memory out of 5000000
+ 6728 multiletter control sequences out of 15000+600000
+ 7847 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,7n,40p,255b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb>
+Output written on main.pdf (5 pages, 646321 bytes).
+PDF statistics:
+ 418 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+
