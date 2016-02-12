@@ -8,30 +8,49 @@
 \begin{fmffile}{d18}
   \begin{fmfgraph*}(10,4)
 %
+	\fmfstraight
+	\fmfleft{ph4,ph3,ph2,id,iu2,iu1,ph1,iem}
+	\fmfright{oac,ph6,oc,od2,ou,od1,ph5,oen}
 	
-	\fmfleft{id,iu2,iu1,iem}
-	\fmfright{od2,ou,od1,oac,oc,oen}
+	\fmf{phantom}{ph3,vph1}
+	\fmf{phantom}{vph1,vph2}
+	\fmf{phantom}{vph2,v4}
+	\fmf{phantom}{v4,ph6}
 	
 	%top line
 	\fmf{fermion}{iem,v1}
 	\fmf{fermion}{v1,oen}
 	
-	%interaction line
-	\fmf{photon,tension=0,label=$W^-$}{v1,v2}
-	
-	%bottom lines
+	%middle lines
 	\fmf{fermion}{iu1,v2}
-	\fmf{fermion}{v2,v3}
-	\fmf{fermion}{v3,od1}
+	\fmf{fermion}{v2,od1}
 	\fmf{fermion}{iu2,ou}
 	\fmf{fermion}{id,od2}
+	
+	%bottom line
+	\fmf{fermion}{id,v3}
+	\fmf{fermion}{v3,od2}
+	
+	\fmffreeze
+	
+	%interaction line
+	\fmf{photon,tension=0,label=$W$}{v1,v2}
 
 	%gluon emission line/decay
 	\fmf{gluon,tension=0.5,label=$g$}{v3,v4}
 	\fmf{fermion}{v4,oc}
 	\fmf{fermion}{oac,v4}
 	
-%	\fmflabel{$c$}{oc}
+	\fmflabel{$e^-$}{iem}
+	\fmflabel{$\nu_e$}{oen}
+	\fmflabel{$u$}{iu1}
+	\fmflabel{$u$}{iu2}
+	\fmflabel{$d$}{id}
+	\fmflabel{$d$}{od1}
+	\fmflabel{$u$}{od2}
+	\fmflabel{$d$}{ou}
+	\fmflabel{$\bar{c}$}{oac}
+	\fmflabel{$c$}{oc}
 	
   \end{fmfgraph*}
 \end{fmffile}

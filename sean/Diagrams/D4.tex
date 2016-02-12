@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d4}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight
+	\fmfleft{ip,ph1,iap}
+	\fmfright{olp,olm,oX}
+	
+	\fmf{phantom}{iap,oX}
+	\fmf{phantom}{ph1,olm}
+	\fmf{phantom}{ip,olp}
+	
+	\fmffreeze
+	
+	\fmf{fermion}{ip,v1}
+	\fmf{fermion}{iap,v1}
+	\fmfblob{0.13w}{v1}
+	
+	\fmf{fermion}{v1,oX}
+	\fmf{photon,tension=1.4,label=$\gamma,,Z$}{v1,v2}
+	
+	\fmf{fermion}{v2,olm}
+	\fmf{fermion,tension=2}{olp,v2}
+	
+	\fmffreeze
+	
+	\fmfi{plain}{vpath (__ip,__v1) shifted (thick*(0,2))}
+	\fmfi{plain}{vpath (__ip,__v1) shifted (thick*(1,-2))}
+	
+	\fmfi{plain}{vpath (__iap,__v1) shifted (thick*(0,2))}
+	\fmfi{plain}{vpath (__iap,__v1) shifted (thick*(1,-2))}
+	
+	\fmflabel{$\bar{p}$}{iap}
+	\fmflabel{$p$}{ip}
+	\fmflabel{$X$}{oX}
+	\fmflabel{$l^+$}{olp}
+	\fmflabel{$l^-$}{olm}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

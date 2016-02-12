@@ -9,8 +9,8 @@
   \begin{fmfgraph*}(10,4)
 %
 	
-	\fmfleft{iau,ic}
-	\fmfright{oac,ou}
+	\fmfleft{ph3,iau,ic,ph1}
+	\fmfright{ph7,oac,ou,ph5}
 	
 	%top line
 	\fmf{fermion}{ic,v1}
@@ -21,10 +21,10 @@
 	\fmf{fermion}{oac,v4}
 	\fmf{fermion, label=$\bar{d}$,label.side=left}{v4,v3}
 	\fmf{fermion}{v3,iau}
-	
+	\fmffreeze
 	%interaction lines
-	\fmf{photon,tension=0.2,label=$W^+$}{v1,v3}
-	\fmf{photon,tension=0.2,label=$W^-$,label.side=left}{v2,v4}
+	\fmf{photon,tension=0.2,label=$W$}{v1,v3}
+	\fmf{photon,tension=0.2,label=$W$,label.side=left}{v2,v4}
 	
 	\fmflabel{$c$}{ic}
 	\fmflabel{$\bar{u}$}{iau}

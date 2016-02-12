@@ -8,19 +8,19 @@
 \begin{fmffile}{d11}
   \begin{fmfgraph*}(10,4)
 %
+	\fmfstraight
     \fmfleft{iem,iep}
     \fmfright{oZ3,oZ2,oZ1}
     
     \fmf{fermion}{iem,Z1}
     \fmf{fermion}{Z1,iep}
     
-    \fmf{photon, label=$Z$, label.side=left}{Z1,Z2}
-    \fmf{phantom}{Z1,Z2}	%thightens line
+    \fmf{photon,label=$Z$,label.side=left}{Z1,Z2}
     \fmf{photon}{Z2,oZ1}
-    \fmf{dashes, label=H, label.side=left}{Z2,H1}
+    \fmf{dashes,tension=2.3,label=H,label.side=left}{Z2,H1}
     
     \fmf{photon}{H1,oZ2}
-    \fmf{photon}{H1,oZ3}
+    \fmf{photon,tension=2.5}{H1,oZ3}
     
     \fmflabel{$e^+$}{iep}
     \fmflabel{$e^-$}{iem}

@@ -8,23 +8,36 @@
 \begin{fmffile}{d9}
   \begin{fmfgraph*}(10,4)
 %
-    \fmfleft{iem,iep}
-    \fmfright{oH2,oy,oH1}
+	\fmfstraight
+    \fmfleft{iem,ph2,ph1,iep}
+    \fmfright{oH2,oy,ph3,oH1}
     
+    \fmf{phantom}{iep,oH1}
+    \fmf{phantom}{ph1,v1}
+    \fmf{phantom}{v1,v2}
+    \fmf{phantom}{v2,Z3}
+    \fmf{phantom}{Z3,ph3}
+    \fmf{phantom}{ph2,oy}
+    \fmf{phantom}{iem,oH2}
+    \fmffreeze
+    
+    %inbound lepton pari
     \fmf{fermion}{iem,Z1}
     \fmf{fermion}{Z1,iep}
     
-    \fmf{photon, label=$Z$, label.side=left}{Z1,Z2}
-    \fmf{phantom}{Z1,Z2}	%thightens line
+    %Z boson path
+    \fmf{photon,tension=1.5,label=$Z$,label.side=left}{Z1,Z2}
     \fmf{dashes}{Z2,oH2}
-    \fmf{photon, label=$Z$, label.side=left}{Z2,Z3}
+    \fmf{photon,tension=2.7,label=$Z$,label.side=left}{Z2,Z3}
     
-    \fmf{fermion, label=$q$}{Z3,q1}
-    \fmf{fermion, label=$\bar{q}$, label.side=right}{q2,Z3}
-    \fmf{vanilla}{q1,q2}
+    %quark triangle
+    \fmf{fermion,tension=3,label=$q$}{Z3,q1}
+    \fmf{fermion,tension=3,label=$\bar{q}$,label.side=right}{q2,Z3}
+    \fmf{vanilla,tension=0.4}{q1,q2}
 
-	\fmf{photon}{q1,oy}
-	\fmf{dashes}{q2,oH1}
+	%quark triangle decay
+	\fmf{photon,tension=1.5}{q1,oy}
+	\fmf{dashes,tension=1.5}{q2,oH1}
 	
 	\fmflabel{$\gamma$}{oy}
  	\fmflabel{H}{oH1}
