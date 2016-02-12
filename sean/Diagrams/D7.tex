@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d7}
+  \begin{fmfgraph*}(10,4)
+%
+	%taken from another plot, therefore weird names
+    \fmfleft{iaq,iq}
+    \fmfright{oW2,oZ,oW1}
+    
+    \fmf{fermion}{iq,v1}
+    \fmf{photon,label=$W^-$,label.side=right}{v1,Z1}
+    
+    \fmf{fermion}{iaq,v2}
+    \fmf{photon,label=$W^+$}{Z1,v2}
+    
+    \fmf{photon}{Z1,oZ}
+    \fmf{fermion}{v1,oW1}
+    \fmf{fermion}{v2,oW2}
+	
+	\fmflabel{$\nu_e$}{iq}
+	\fmflabel{$e^-$}{iaq}
+	\fmflabel{$e^-$}{oW1}
+	\fmflabel{$\nu_e$}{oW2}
+	\fmflabel{$\gamma$}{oZ}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

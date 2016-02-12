@@ -11,10 +11,29 @@
 	\fmfstraight
 	
 	\fmfleft{iep,iem}
-	\fmfright{oan,oy2,oy1,on}
+	\fmfright{og2,og1}
 	
-	%inbound fermions
 	\fmf{fermion}{iem,Z1}
+	\fmf{fermion}{iep,Z1}
+	
+	\fmf{photon,label=$\gamma,,Z$,label.side=left}{Z1,Z2}
+	
+	\fmf{fermion,left,label=$q$}{Z2,H1}
+	\fmf{fermion,left,label=$\bar{q}$}{H1,Z2}
+	
+	\fmf{dashes,label=H}{H1,H2}
+	
+	\fmf{fermion,label=$q$}{H2,v1}
+	\fmf{fermion,label=$\bar{q}$}{v2,H2}
+	\fmf{vanilla}{v1,v2}
+	
+	\fmf{gluon}{v1,og1}
+	\fmf{gluon}{v2,og2}
+	
+	\fmflabel{$e^-$}{iem}
+	\fmflabel{$e^+$}{iep}
+	\fmflabel{$g$}{og1}
+	\fmflabel{$g$}{og2}
 	
   \end{fmfgraph*}
 \end{fmffile}

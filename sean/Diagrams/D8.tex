@@ -8,29 +8,61 @@
 \begin{fmffile}{d8}
   \begin{fmfgraph*}(10,4)
 %
-    \fmfleft{iu,id}
-    \fmfright{od,olp,olm,ou}
+	\fmfstraight
+    \fmfleft{iu3,iu2,iu,ph4,ph3,ph2,ph1,id,iu1,id1}
+    \fmfright{ou3,ou2,ou,olp1,olm1,olp,olm,od,ou1,od1}
 
-    \fmf{fermion}{iu,Wp}
-    \fmf{fermion}{Wp,od}
+	\fmf{fermion}{id1,od1}
+	\fmf{fermion}{iu1,ou1}
+	\fmf{fermion}{iu2,ou2}
+	\fmf{fermion}{iu3,ou3}
+	\fmf{fermion}{iu,Wp1}
+	\fmf{fermion,label=$d$,label.side=left}{Wp1,Wm2}
+	\fmf{fermion}{Wm2,ou}
+	\fmf{fermion}{id,Wm1}
+	\fmf{fermion,label=$u$}{Wm1,Wp2}
+	\fmf{fermion}{Wp2,od}
+	\fmf{phantom}{ph1,olm}
+	\fmf{phantom}{ph2,olp}
+	\fmf{phantom}{ph3,olm1}
+	\fmf{phantom}{ph4,olp1}
+	
+	\fmffreeze
     
-    \fmf{fermion}{id,Wm}
-    \fmf{fermion}{Wm,ou}
+    %first lepton pair
+    \fmf{photon}{Wp1,Z1}
+    \fmf{photon,tension=2.3}{Wm1,Z1}
     
-    \fmf{photon, label=$W^+$}{Wp,Z1}
-    \fmf{photon, label=$W^-$, label.side=left}{Wm,Z1}
-    
-    \fmf{photon, label=$\gamma,,Z$}{Z1,Z2}
+    \fmf{photon,tension=0.4,label=$\gamma,,Z$,label.side=right}{Z1,Z2}
     
     \fmf{fermion}{Z2,olm}
     \fmf{fermion}{olp,Z2}
     
+    %second lepton pair
+    \fmf{photon}{Wp2,Z3}
+    \fmf{photon,tension=2.3}{Wm2,Z3}
+    
+    \fmf{photon,label=$\gamma,,Z$}{Z3,Z4}
+    
+    \fmf{fermion}{Z4,olm1}
+    \fmf{fermion}{olp1,Z4}
+    
+    \fmflabel{$d$}{id1}
+    \fmflabel{$u$}{iu1}
+    \fmflabel{$u$}{iu2}
+    \fmflabel{$u$}{iu3}
+    \fmflabel{$d$}{od1}
+    \fmflabel{$u$}{ou1}
+    \fmflabel{$u$}{ou2}
+    \fmflabel{$u$}{ou3}
     \fmflabel{$d$}{id}
     \fmflabel{$u$}{iu}
     \fmflabel{$u$}{ou}
     \fmflabel{$d$}{od}
     \fmflabel{$l^+$}{olp}
     \fmflabel{$l^-$}{olm}
+    \fmflabel{$l^+$}{olp1}
+    \fmflabel{$l^-$}{olm1}
     
   \end{fmfgraph*}
 \end{fmffile}

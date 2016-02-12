@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d5}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight
+    \fmfleft{ph2,itp,ph1}
+    \fmfright{omup,onm,oant}
+    
+    \fmf{fermion,tension=2}{itp,v1}
+    \fmf{fermion}{v1,oant}
+    %\fmf{phantom,tension=1}{ph2,v1}
+    
+    \fmf{photon,tension=2.3,label=$W^-$}{v1,v2}
+    \fmf{fermion}{v2,onm}
+    \fmf{fermion,tension=2.5}{omup,v2}
+    
+    \fmflabel{$\tau$}{itp}
+    \fmflabel{$\bar{\nu}_\tau$}{oant}
+    \fmflabel{$\nu_\mu$}{onm}
+    \fmflabel{$\mu^+$}{omup}
+    
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

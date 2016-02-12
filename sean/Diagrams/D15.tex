@@ -10,8 +10,28 @@
 %
 	\fmfstraight
 	
-	\fmfleft{iep,iem}
-	\fmfright{oab,od,oad,ob}
+	\fmfleft{iep,ph3,ph4,ph1,ph2,iem}
+	\fmfright{oab,od,ph6,ph5,oad,ob}
+	
+	\fmf{phantom}{iem,ob}
+	
+	\fmf{phantom}{ph2,ph5}
+	\fmf{phantom}{ph3,ph6}
+	
+	\fmf{phantom}{ph1,i1}
+	\fmf{phantom}{i1,i2}
+	\fmf{phantom}{i2,i3}
+	\fmf{phantom}{i3,i4}
+	\fmf{phantom}{i4,ph5}
+	
+	\fmf{phantom}{ph4,i5}
+	\fmf{phantom}{i5,i6}
+	\fmf{phantom}{i6,i7}
+	\fmf{phantom}{i7,i8}
+	\fmf{phantom}{i8,ph6}
+	
+	\fmf{phantom}{iep,oab}
+	\fmffreeze
 	
 	%inbound fermions
 	\fmf{fermion}{iem,Z1}
@@ -20,22 +40,25 @@
 	%int vector boson line
 	\fmf{photon,tension=1.8,label=$Z$,label.side=left}{Z1,Z2}
 	
-	%bottom-quark lines
-	\fmf{fermion,tension=2}{Z2,v1}
-	\fmf{fermion,tension=2}{v1,ob}
-	\fmf{fermion}{oab,Z2}
+	%Y(3) lines
+	\fmf{fermion,tension=1}{Z2,i3}
+	\fmf{fermion,tension=1}{i7,Z2}
+	\fmf{fermion,tension=1,label=Y(3s),label.side=right}{i3,i4}
+	\fmf{fermion,tension=1}{i7,i8}
+	\fmf{fermion}{oab,i8}
+	\fmf{fermion}{i4,ob}
 	
 	%gluon emission
-	\fmf{gluon,tension=0.3}{v1,v2}
+	\fmf{gluon,tension=2}{i4,v1}
 	
 	%gluon decay to down-type quarks
-	\fmf{fermion,tension=0.5}{v2,od}
-	\fmf{fermion,tension=0.1}{oad,v2}
+	\fmf{fermion,tension=0.8}{v1,od}
+	\fmf{fermion,tension=0.1}{oad,v1}
 	
 	\fmflabel{$e^+$}{iep}
 	\fmflabel{$e^-$}{iem}
 	\fmflabel{$b$}{ob}
-	\fmflabel{$\bar{d}$}{oab}
+	\fmflabel{$\bar{b}$}{oab}
 	\fmflabel{$d$}{od}
 	\fmflabel{$\bar{d}$}{oad}
 	

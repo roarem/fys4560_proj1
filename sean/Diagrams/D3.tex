@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+\begin{document}
+\pagenumbering{gobble}
+\unitlength = 1cm
+\begin{figure*}[h]
+\begin{fmffile}{d3}
+  \begin{fmfgraph*}(10,4)
+%
+	\fmfstraight
+	\fmfleft{iep,iem}
+	\fmfright{oeasl,oesl}
+	
+	\fmf{fermion}{iem,Z1}
+	\fmf{fermion}{Z1,iep}
+	
+	\fmf{photon,label=$\gamma,,Z$}{Z1,Z2}
+	
+	\fmf{dashes}{Z2,oesl}
+	\fmf{dashes}{Z2,oeasl}
+	
+	\fmflabel{$e^+$}{iep}
+	\fmflabel{$e^-$}{iem}
+	\fmflabel{$\tilde{l}^+$}{oeasl}
+	\fmflabel{$\tilde{l}^-$}{oesl}
+	
+  \end{fmfgraph*}
+\end{fmffile}
+\end{figure*}
+\end{document}

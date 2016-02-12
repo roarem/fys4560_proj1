@@ -8,6 +8,7 @@
 \begin{fmffile}{d20}
   \begin{fmfgraph*}(10,4)
 %
+	\fmfstraight
     \fmfleft{iem,iep}
     \fmfright{oat,oZ,ot}
     
@@ -17,8 +18,10 @@
     \fmf{photon, label=$\gamma,,Z$, label.side=left}{Z1,Z2}
     
     \fmf{fermion}{oat,Z2}
-    \fmf{fermion}{Z2,v1}
-    \fmf{fermion}{v1,ot}
+    \fmf{fermion,tension=1.9}{Z2,v1}
+    \fmf{fermion,tension=1.9}{v1,ot}
+    
+    \fmffreeze
     
     \fmf{photon}{v1,oZ}
     

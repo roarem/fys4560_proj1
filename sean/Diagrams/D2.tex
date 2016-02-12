@@ -13,24 +13,18 @@
     \fmf{curly}{i1,v1}
     \fmf{curly}{i2,v2}
 
-    \fmf{photon, label=$\gamma,,Z$,tension=0.4}{v3,v4}
+    \fmf{photon,tension=0.7,label=$\gamma,,Z$,label.side=left}{v3,v4}
 	
-    \fmf{fermion,label=$\bar{q}$}{v3,v1}
-    \fmf{fermion,label=$q$, label.side=left}{v2,v3}
-    \fmf{plain}{v1,v2}
+    \fmf{fermion,tension=1.2,label=$\bar{q}$}{v3,v1}
+    \fmf{fermion,tension=1.2,label=$q$, label.side=left}{v2,v3}
+    \fmf{plain,tension=0.6}{v1,v2}
   
     \fmf{fermion}{v4,o1}
     \fmf{fermion}{o2,v4}
-    %\fmf{plain}{v4,o4}
-    %\fmffreeze
-    %\fmf{curly}{v3,o2}
-    %\fmf{curly}{v4,o3}
     \fmflabel{$e^-$}{o1}
     \fmflabel{$e^+$}{o2}
     \fmflabel{$g$}{i1}
     \fmflabel{$g$}{i2}
-    %\fmflabel{$g$}{o2}
-    %\fmflabel{$g$}{o3}
   \end{fmfgraph*}
 \end{fmffile}
 \end{figure*}
