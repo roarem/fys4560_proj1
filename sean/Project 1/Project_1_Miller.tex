@@ -16,12 +16,17 @@
 %\usepackage{sbbm}
 \usepackage{float}
 \usepackage{mathtools}
-\usepackage{subfigure}
+%\usepackage{subfigure}
 \usepackage{fancyhdr}
 \usepackage{simplewick}
 \usepackage{slashed}
 \usepackage{xfrac}
 %\usepackage{tikz-feynman}
+
+\usepackage[pass]{geometry}
+%\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % % % Pagestyling
 \pagestyle{fancy}
@@ -99,10 +104,21 @@ All Feynman graphs are shown in figure ..., the type of reaction(s) is specified
 The particle decays present here are those of the anti-tau lepton (graph 5), two different decays (graphs 12 and 17), and of the upsilon meson. the lifetime of a particle can be estimated from the vertex factors present in the Feynman diagram. This can be seen from Fermi's golden rule:
 
 \begin{equation}
-	W = 
+	\Gamma_{fi} = 2\pi|T_{fi}|^2\rho(E_i)
 \end{equation}
 
+where $\Gamma_{fi}$ is the transition rate between states $i$ and $f$, $T_{ij}$ is the "transition matrix element"\footnote{Or simply the "T-matrix", as its often called} ($\langle f|H'|i\rangle$, where $H'$ is a perturbation causing a change of state), and $\rho(E_i)$ is the state density. The T-matrix is proportional to $\mathcal{M}$, the scattering probability matrix for two states, and often the root of problems in particle physics. This matrix is equal to the sum of proportioned products of squared vertex factors\footnote{This is a bit of a mouthful. Essentially, $\mathcal{M}_{if} = \sum_j a_j\prod_{k_j}|V_{k_j}|^2$, where the sum suns over all processes going from $i$ to $j$, and the product symbol runs over all interaction vertices for that specific process. With the standard model in place, the vertices are easily read off the Feynman diagrams, but the problems remain in; 1) finding the $a_j$-terms and 2) considering enough diagrams to get sufficient accuracy.} So, for a certain decay process, one considers a certain "path" of decay only. Therefore, the transition rate (or decay rate, in teh case of decays) is proportional to the product of vertex factors. Although certainly not applicable to verify any theories, the estimate of the decay rate gives a rough idea of both the branching ratio of a certain decay and the lifetime of that particle.\\
 
+In process 5, a anti-tau-lepton decays by emitting a $W^-$-boson. The average lifetime of the tau-lepton is measured to be about $\tau\approx2.8\times10^{-13}\:\text{s}$, and the same applies for the anti-tau-lepton. Due to the relation $\tau = \frac{1}{\Gamma}$, where $\Gamma$ is the full decay width of a particle, using the average lifetime gives $\Gamma\approx3.6\time10^{12}$ The weak vertex factor is\footnote{The weak vertex factor is actually $V_W = \frac{-ig_w}{2\sqrt{2}}\gamma^\mu(1-\gamma^5)$, but only $g_w$ plays a part here. The factors of 2 are conventional and should not play a large part.} $V_W=g_w = 0.653$. Since there are two vertices only, the decay width is, very roughly; $\Gamma_5 \approx |V_W|^2\times|V_W|^2 = g_w^4 \approx 0.181$.
+
+%\include{Diagrams}
+
+\subsection{Suppression and forbidding of processes}
+All the processes are fine when considering conservation numbers (with the possible exception of 5, explained below) such as family numbers, charge and spin. However, there are some processes that are unfavourable due to other phenomenon.
+
+In process 5, it is suggested a anti-electron neutrino is created. This would violate lepton family number conservation, which is normally conserved, with the exception of neutrino oscillations. While it is a bit odd, the reaction is allowed, after some time. Momentarily after the reaction, however, there would have had to be a anti-muon neutrino, should the theoretical model be correct.
+
+Process 9 show double Higgs production in an electron-positron annihilation. This brings about a problem due to the enormous difference in initial and final mass. When an electron is 
 
 \section{\underline{Top quark and W-boson}}
 \subsection{The CKM matrix and the function of the W-boson}

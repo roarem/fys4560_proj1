@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  12 FEB 2016 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  13 FEB 2016 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,19 +162,20 @@ e
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
+* paper: custom
+* layout: <custom>
+* layout(width,height): (14.22636pt,156.49014pt)
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=557.38951pt
-* \textheight=738.0645pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-80.81725pt
+* h-part:(L,W,R)=(2.13397pt, 9.9584pt, 2.13399pt)
+* v-part:(T,H,B)=(18.77899pt, 109.54262pt, 28.16853pt)
+* \paperwidth=310.13503pt
+* \paperheight=153.64487pt
+* \textwidth=9.9584pt
+* \textheight=109.54262pt
+* \oddsidemargin=-70.13602pt
+* \evensidemargin=-70.13602pt
+* \topmargin=-90.491pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -200,23 +201,37 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-) [1
+)
+Overfull \hbox (274.56903pt too wide) in paragraph at lines 28--30
+[][]
+ []
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./D2.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+LaTeX Warning: Float too large for page by 16.26836pt on input line 30.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./D2.aux) ) 
 Here is how much of TeX's memory you used:
  2214 strings out of 495020
  29909 string characters out of 6181323
- 92264 words of memory out of 5000000
+ 92397 words of memory out of 5000000
  5428 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,32p,295b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on D2.pdf (1 page, 32121 bytes).
+ 38i,8n,24p,352b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on D2.pdf (1 page, 32130 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
