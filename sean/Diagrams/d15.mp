@@ -27,7 +27,7 @@ vconnect ("phantom", __iep, __oab);
 vfreeze;
 vconnect ("fermion", __iem, __Z1);
 vconnect ("fermion", __Z1, __iep);
-vconnect ("photon,tension=1.8,label=$Z$,label.side=left", __Z1, __Z2);
+vconnect ("photon,tension=1.8,label=$\gamma ,,Z$,label.side=left", __Z1, __Z2);
 vconnect ("fermion,tension=1", __Z2, __i3);
 vconnect ("fermion,tension=1", __i7, __Z2);
 vconnect ("fermion,tension=1,label=Y(3s),label.side=right", __i3, __i4);

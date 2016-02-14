@@ -44,6 +44,11 @@
 \newcommand{\epm}{\end{pmatrix}}
 % % %
 
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\arabic{enumii}.}
+\renewcommand{\labelenumiii}{\theenumiii}
+\renewcommand{\theenumiii}{\arabic{enumiii}.}
 
 % % % Enables Matlab-scipt import
 \lstset{
@@ -197,8 +202,8 @@ So by measuring the branching ratio of some decay, one can, by also knowing the 
 
 \subsection{Top quark production}
 There are 3 processes that are commonly used for top quark production: $\text{e}^-\text{e}^+$, $\text{p}\text{p}$ and $\text{p}\bar{\text{p}}$.\\
-Electron-positron annihilation creates an intermediate photon or Z-boson that both can decay into a $l^-l^+$ state or $\text{q}\bar{\text{q}}$ state. Therefore, the process $\text{e}^-\text{e}^+ \:\rightarrow\: \text{t}\bar{\text{t}}$ is fully possible, if not a bit unfavourable. As there are two top quarks, there will be two jets, as a result of top-quark decay.\\
-In a pp collision there are no annihilations, only high energy collisions. In these collisions, gluons are emitted from one or several of the quarks in one or both of the protons. It is therefore fairly straight forward to realise any one of these gluons can produce a top-anti-top product. With a bit of luck, many top-anti-top pairs can form, resulting in some even number of jets.\\
+Electron-positron annihilation creates an intermediate photon or Z-boson that both can decay into a $l^-l^+$ state or $\text{q}\bar{\text{q}}$ state. Therefore, the process $\text{e}^-\text{e}^+ \:\rightarrow\: \text{t}\bar{\text{t}}$ is fully possible, if not a bit unfavourable.\\
+In a pp collision there are no annihilations, only high energy collisions. In these collisions, gluons are emitted from one or several of the quarks in one or both of the protons. It is therefore fairly straight forward to realise any one of these gluons can produce a top-anti-top product.\\
 The final process, $\text{p}\bar{\text{p}}$, a quark and an anti-quark (either up or down) can annihilate to make a gluon which again makes a top-anti-top product.\\
 The only two observed processes that produce a single top quark are:
 
@@ -214,7 +219,23 @@ PUT IN SOME GRAPHS, LOL
 \subsection{Top quark decay}
 The top quark decays by transforming into either a b,s or d quark, while emitting a W-boson. Of the three, it is far more likely to decay to a bottom quark, with a branching ratio of about 0.91. Considering this, it can decay in a limited number of ways, all of which are dependant on what the emitted W-boson decays into afterwards. Many usually just write the top-decay as $\text{t} \:\rightarrow\: \text{W}^+\text{b}$, without filling in the decay products of $\text{W}^+$.\\
 
-Experimentally, the top quark 
+Experimentally\footnote{Source: "Discovery of Top Quark" - Anton Kapliy, University of Chicago, 2008.}, the top quark can be identified by 4 different measurable outcomes. Since the top quark is prone to decay into a b-quark, it will emit a $W$-boson. In every case, the b-quark will hadronize and form a jet. What remains is how the $W$-boson decays:
+
+\begin{enumerate}
+	\item A quark pair production, giving two jets.
+	\item A $\tau$-lepton, which can decay into either other leptons or hadrons, which means it is hard to distinguish from other particle productions.
+	\item An electron or muon (and a neutrino). As these particles are quite stable and charged, they will be measured directly.
+\end{enumerate}
+
+Lastly, in the case of top-pair production, the combination of $W$ decays will be measured. For example, should each $W$-boson decay hadronically (all hadronic channel), 6 jets will form (4 from quark pairs, 2 from bottom quarks). Both the bosons could also decay leptonically (dileptonic channel), giving 2 jets and 2 leptons. The last measurable outcome is if one decays leptonically and the other hadronically, giving 4 jets and 1 lepton.\\
+
+The top quark is special in a few ways. First, and most important of all, is its short lifetime; $~10^{-25}\:\text{s}$. As the top quark decays long before hadronizing could happen, the decay product provide a means to measure a solitary quark. Another point is that is was the last quark (to complete the standard model) to be found, proving quarks had the same group properties of the leptons (3 families, 2 types), and that quarks also fit into weak interaction theory.\\
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{Overview.png}
+\end{figure}
+
+In the Atlas overview (left side), one can see one candidate for top-pair production. There are two jets, blue and red, and two leptons deviating a bit from each jet, green and yellow. This fits nicely, as the apparent total momentum of each of these products appear to zero. Since there are two jets (bottom quarks) and two leptons ($W$-boson decay), this is a dileptonic decay.
 
 \subsection{Branching ratios of two top quark decays}
 The two top quark decays $t\:\rightarrow\text{b}+\text{c}\bar{\text{s}}$ and $t\:\rightarrow\text{b}+\tau+\nu_\tau$ occur by emission of a W-boson. As the top quark decays by weak interaction in both cases, the Sargent rule can be used to estimate the branching ratio of each process:
@@ -310,13 +331,45 @@ Here $G_\mu^a$ are the gauge fields of $SU(3)$, later to be identified with the 
 
 In order for this to transform in the same manner as the quark field alone,
 
-Thus the first order interactive term between the quarks and gluons is found, but the gauge-invariant kinetic gluon term remains hidden. Again, from non-abelian gauge theory it is known that the field strength must be found. To find it, it is necessary\footnote{At least by approaching the problem with infinitesimal expansion.} to know the transformation properties of $q_f^a$ and $G_a^\mu$ separately:
+Thus the first order interactive term between the quarks and gluons is found, but the gauge-invariant kinetic gluon term remains hidden. Again, from non-abelian gauge theory it is known that the field strength must be found.\\
+The covariant derivative transforms as:
 
-\begin{align}
-	q_f^a &\:\rightarrow\: q_f^a - ig_s\left(\frac{\lambda^a}{2}\right)_{\alpha\beta}\\
-	&=
-\end{align}
+\begin{equation}
+	D^\mu \:\rightarrow\: UD^\mu U^\dagger
+\end{equation}
 
+This is known because $D^\mu q_f$ is invariant, and since $U$ is unitary:$D^\mu q_f \:\rightarrow\: UD^\mu q_fU^\dagger = UD^\mu U^\dagger U q_fU^\dagger$. So the above transform means the gluon field transforms as:
 
+\begin{equation}
+	G^\mu \:\rightarrow\: UG^\mu U^\dagger - \frac{i}{g_s}(\partial^\mu U)U^\dagger
+\end{equation}
+
+This is obviously not an invariant quantity then. Instead, one can introduce a tensor:
+
+\begin{align*}
+	G^{\mu\nu}(x) &\equiv \frac{i}{g_s}[D^\mu,D^\nu]\\
+	&= \partial^\mu G^\nu - \partial^\nu G^\mu - ig_s[G^\mu,G^\nu]\\
+	&\equiv \frac{\lambda^a}{2}G_a^{\mu\nu}(x)
+\end{align*}
+
+where:
+
+\begin{equation}
+	G_a^{\mu\nu} = \partial^\mu G_a^\nu - \partial^\mu G_a^\nu + g_sf^{abc}G_b^\nu G_c^\nu
+\end{equation}
+
+and $f^{abc}$ is the group structure constant. Now one has an invariant term:
+
+\begin{equation}
+	G^{\mu\nu} \:\rightarrow\: UG^{\mu\nu}U^\dagger
+\end{equation}
+
+In order to get kinetic terms, and to remove the free indices, the final Lagrangian is:
+
+\begin{equation}
+	\mathcal{L}_{\text{QCD}} = -\frac{1}{4}G_a^{\mu\nu}G_{\mu\nu}^a + \sum_f \bar{q}_f(i\gamma^\mu D_\mu - m_f)q_f
+\end{equation}
+
+The biggest difference between the QED and QCD Lagrangian is 
 
 \end{document}

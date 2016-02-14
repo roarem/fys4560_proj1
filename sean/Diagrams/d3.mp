@@ -12,7 +12,7 @@ vleft (__iep, __iem);
 vright (__oeasl, __oesl);
 vconnect ("fermion", __iem, __Z1);
 vconnect ("fermion", __Z1, __iep);
-vconnect ("photon,label=$\gamma ,,Z$", __Z1, __Z2);
+vconnect ("photon,label=$\gamma ,,Z$,label.side=left", __Z1, __Z2);
 vconnect ("dashes", __Z2, __oesl);
 vconnect ("dashes", __Z2, __oeasl);
 vlabel ("$e^+$", __iep);

@@ -15,7 +15,7 @@ vconnect ("gluon", __ig2, __v2);
 vconnect ("fermion,tension=1.5,label=$q$", __v1, __Z1);
 vconnect ("fermion,tension=1.5,label=$\bar {q}$,label.side=left", __Z1, __v2);
 vconnect ("fermion,tension=0.1", __v2, __v1);
-vconnect ("photon,tension=1.5,label=$Z$,label.side=left", __Z1, __Z2);
+vconnect ("photon,tension=1.5,label=$\gamma ,,Z$,label.side=left", __Z1, __Z2);
 vconnect ("fermion", __Z2, __v3);
 vconnect ("fermion", __v3, __ot);
 vconnect ("fermion", __oat, __v4);

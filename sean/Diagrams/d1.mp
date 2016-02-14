@@ -9,7 +9,7 @@ vinit;
 pickup pencircle scaled thin;
 vleft (__i1, __i2);
 vright (__o1, __o2, __o3, __o4);
-vconnect ("photon, label=$\gamma ,,Z$", __v1, __v2);
+vconnect ("photon, label=$\gamma ,,Z$,label.side=left", __v1, __v2);
 vconnect ("fermion", __i1, __v1);
 vconnect ("fermion", __v1, __i2);
 vconnect ("plain", __v2, __v3);
