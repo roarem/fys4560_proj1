@@ -31,7 +31,7 @@ vconnect ("photon,tension=1.8,label=$\gamma ,,Z$,label.side=left", __Z1, __Z2);
 vconnect ("fermion,tension=1", __Z2, __i3);
 vconnect ("fermion,tension=1", __i7, __Z2);
 vconnect ("fermion,tension=1,label=Y(3s),label.side=right", __i3, __i4);
-vconnect ("fermion,tension=1", __i7, __i8);
+vconnect ("fermion,tension=1", __i8, __i7);
 vconnect ("fermion", __oab, __i8);
 vconnect ("fermion", __i4, __ob);
 vconnect ("gluon,tension=2", __i4, __v1);
