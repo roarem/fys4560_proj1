@@ -142,20 +142,23 @@ The full decay width is given by $\Gamma_{\text{tot}} = 1/\tau$, meaning the bra
 \end{equation}
 
 \subsubsection{$H \:\rightarrow\: gg$}
-This process is significantly worse to calculate, so instead only rough estimates will be performed. As mentioned above, the decay rate is proportional to the product of squared vertices. The Higgs coupling to a fermion pair is proportional to $\frac{m_f}{V}$, where $V=(\sqrt{2}G_F)^{-\sfrac{1}{2}} = 246\:\text{GeV}$ and $m_f$ the fermion mass. The coupling between a quark and a gluon is given by the strong coupling constant $g_s$, which is usually of order 1, which will be assumed here as well. It grows with energy (asymptotic freedom), where the energy here would be $E = \frac{m_H}{2} = 62.5\:\text{GeV}$. Therefore, the decay rate is roughly:
-
-\begin{equation}
-	\Gamma_{H \:\rightarrow\: gg} \propto \sum_{f=q}\left|\frac{m_f}{V}\right|^2\Gamma_0
-\end{equation}
-
-where $\Gamma_0$ is some other decay rate with which to compare (as one is only interested in the branching ratio, $\Gamma_0$ will disappear and be of no interest). Similarly, the full width is about (smaller fermion masses are ignored):
+This process is significantly worse to calculate, so instead only rough estimates will be performed. As mentioned above, the decay rate is proportional to the product of squared vertices. The Higgs coupling to a fermion pair is proportional to $\frac{m_f}{V}$, where $V=(\sqrt{2}G_F)^{-\sfrac{1}{2}} = 246\:\text{GeV}$ and $m_f$ the fermion mass. The coupling between a quark and a gluon is given by the strong coupling constant $g_s$, which is usually of order 1, which will be assumed here as well. It grows with energy (asymptotic freedom), where the energy here would be $E = \frac{m_H}{2} = 62.5\:\text{GeV}$.\\
+The Higgs boson as a lifetime of order $10^{-22}\:\text{s}$, and since the transition probability is given by:
 
 \begin{align*}
-	\Gamma_H &\propto \left|\frac{1}{V}\right|^2\left(\sum_f |m_f|^2 + |m_W|^4 + |m_Z|^4\right)\Gamma_0\\
-	&\approx  1810
+	W &= \frac{BR}{\tau} \simeq |\mathcal{M}|^2 \simeq \prod |V|^2\\
+	&\rightarrow\: BR \simeq 10^{-22}\times\left|\frac{m_q}{V}\right|^2
 \end{align*}
 
-There are 
+Therefore, the decay rate is roughly:
+
+\begin{equation}
+	\Gamma_{H \:\rightarrow\: gg} \propto \sum_{f=q}\left|\frac{m_f}{V}\right|^2
+\end{equation}
+
+
+
+\subsubsection{}
 
 \subsection{Suppression and forbidding of processes}
 All the processes are fine when considering conservation numbers (with the possible exception of 5, explained below) such as family numbers, charge and spin. However, there are some processes that are unfavourable due to other phenomenon.\\
