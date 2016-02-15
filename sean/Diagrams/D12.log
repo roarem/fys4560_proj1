@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  10 FEB 2016 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  15 FEB 2016 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -197,26 +197,26 @@ e
 File: d12.1 Graphic file (type mps)
 [MP to PDF] (./d12.1) (./d12.t1
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+(Font)              <5> on input line 3.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./D12.aux) ) 
 Here is how much of TeX's memory you used:
- 2158 strings out of 495020
- 29532 string characters out of 6181323
+ 2179 strings out of 495020
+ 29679 string characters out of 6181323
  92264 words of memory out of 5000000
- 5372 multiletter control sequences out of 15000+600000
+ 5393 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,32p,296b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,32p,296b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on D12.pdf (1 page, 32873 bytes).
+Output written on D12.pdf (1 page, 31821 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

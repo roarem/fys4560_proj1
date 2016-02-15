@@ -105,18 +105,57 @@
 \fancyfoot[C]{\thepage}
 
 \section{\underline{SM and beyond: Allowed, forbidden and discovery processes}}
-All Feynman graphs are shown in figure ..., the type of reaction(s) is specified behind each reaction process.\\
-The particle decays present here are those of the anti-tau lepton (graph 5), two different decays (graphs 12 and 17), and of the upsilon meson. the lifetime of a particle can be estimated from the vertex factors present in the Feynman diagram. This can be seen from Fermi's golden rule:
+All Feynman graphs are shown below, and the type of reaction(s) is specified behind each process.\\
+The particle decays present here are those of the anti-tau lepton (graph 5), two different Higgs decays (graphs 12 and 17), and of the upsilon meson. the lifetime of a particle can be estimated from the vertex factors present in the Feynman diagram. This can be seen from Fermi's golden rule:
 
 \begin{equation}
 	\Gamma_{fi} = 2\pi|T_{fi}|^2\rho(E_i)
 \end{equation}
 
-where $\Gamma_{fi}$ is the transition rate between states $i$ and $f$, $T_{ij}$ is the "transition matrix element"\footnote{Or simply the "T-matrix", as its often called} ($\langle f|H'|i\rangle$, where $H'$ is a perturbation causing a change of state), and $\rho(E_i)$ is the state density. The T-matrix is proportional to $\mathcal{M}$, the scattering probability matrix for two states, and often the root of problems in particle physics. This matrix is equal to the sum of proportioned products of squared vertex factors\footnote{This is a bit of a mouthful. Essentially, $\mathcal{M}_{if} = \sum_j a_j\prod_{k_j}|V_{k_j}|^2$, where the sum suns over all processes going from $i$ to $j$, and the product symbol runs over all interaction vertices for that specific process. With the standard model in place, the vertices are easily read off the Feynman diagrams, but the problems remain in; 1) finding the $a_j$-terms and 2) considering enough diagrams to get sufficient accuracy.} So, for a certain decay process, one considers a certain "path" of decay only. Therefore, the transition rate (or decay rate, in teh case of decays) is proportional to the product of vertex factors. Although certainly not applicable to verify any theories, the estimate of the decay rate gives a rough idea of both the branching ratio of a certain decay and the lifetime of that particle.\\
+where $\Gamma_{fi}$ is the transition rate between states $i$ and $f$, $T_{ij}$ is the transition matrix element"\footnote{Or simply the "T-matrix, as its often called.} ($\langle f|H'|i\rangle$, where $H'$ is a perturbation causing a change of state), and $\rho(E_i)$ is the state density. The T-matrix is proportional to $\mathcal{M}$, the scattering probability matrix for two states, and often the root of problems in particle physics. This matrix is equal to the sum of proportioned products of vertex factors\footnote{This is a bit of a mouthful. Essentially, $\mathcal{M}_{if} = \sum_j a_j\prod_{k_j}V_{k_j}$, where the sum suns over all processes going from $i$ to $j$, and the product symbol runs over all interaction vertices for that specific process. With the standard model in place, the vertices are easily read off the Feynman diagrams, but the problems remain in; 1) finding the $a_j$-terms and 2) considering enough diagrams to get sufficient accuracy.} So, for a certain decay process, one considers a certain "path" of decay only. Therefore, the transition rate (or decay rate, in the case of decays) is proportional to the product of vertex factors. Although certainly not applicable to verify any theories, the estimate of the decay rate gives a rough idea of both the branching ratio of a certain decay and the lifetime of that particle.
 
-In process 5, a anti-tau-lepton decays by emitting a $W^-$-boson. The average lifetime of the tau-lepton is measured to be about $\tau\approx2.8\times10^{-13}\:\text{s}$, and the same applies for the anti-tau-lepton. Due to the relation $\tau = \frac{1}{\Gamma}$, where $\Gamma$ is the full decay width of a particle, using the average lifetime gives $\Gamma\approx3.6\time10^{12}$ The weak vertex factor is\footnote{The weak vertex factor is actually $V_W = \frac{-ig_w}{2\sqrt{2}}\gamma^\mu(1-\gamma^5)$, but only $g_w$ plays a part here. The factors of 2 are conventional and should not play a large part.} $V_W=g_w = 0.653$. Since there are two vertices only, the decay width is, very roughly; $\Gamma_5 \approx |V_W|^2\times|V_W|^2 = g_w^4 \approx 0.181$.
+\subsection{Lifetimes and branching ratios}
+\subsubsection{$\tau^+ \:\rightarrow\: \mu^+\nu_e\bar{\nu}_\tau$}
+In process 5, a anti-tau-lepton decays by emitting a $W^-$-boson. As the mass difference between a tau lepton and muon is about the same as that between a muon and electron (negligible mass in comparison), one can use the formula for the decay rate of the muon\footnote{Eq. 9.34 in "Introduction to Elementary Particles", Griffiths, 2nd edition}:
 
-\include{Diagrams}
+\begin{equation}
+	\Gamma_\mu = \left(\frac{m_\mu g_w}{M_W}\right)^4 \frac{m_\mu c^2}{12\hbar(8\pi)^3}
+	\label{decay_width}
+\end{equation}
+
+for the decay rate of the tau lepton, but recall the tau lepton can decay both an electron and muon (leptonically), whereas muon only to an electron. Since the only difference is now the mass, one can relate the lifetimes:
+
+\begin{equation}
+	\frac{\tau(\tau\:\rightarrow\:\text{leptons})}{\tau(\mu\:\rightarrow\:\text{leptons})} = \frac{m_\mu^5}{2m_\tau^5} \:\:\longrightarrow\:\: \tau_\tau = \frac{1}{2}\left(\frac{m_\mu}{m_\tau}\right)^5\tau_\mu
+\end{equation}
+
+where the factor of 2 is due to $\tau$ having twice as many decay modes. Inserting experimentally found values for $m_\mu$, $m_\tau$ and $\tau_\mu$, one finds:
+
+\begin{equation}
+	\tau_\tau \simeq 8.16\times 10^{-13}\:\text{s}
+\end{equation}
+
+The full decay width is given by $\Gamma_{\text{tot}} = 1/\tau$, meaning the branching ratio is:
+
+\begin{equation}
+	\frac{\Gamma_{\tau^+ \:\rightarrow\: \mu^+\nu_e\bar{\nu}_\tau}}{\Gamma_{\text{tot}}} \simeq \tau_\tau\left(\frac{m_\tau g_w}{M_W}\right)^4 \frac{m_\tau c^2}{12\hbar(8\pi)^3}
+\end{equation}
+
+\subsubsection{$H \:\rightarrow\: gg$}
+This process is significantly worse to calculate, so instead only rough estimates will be performed. As mentioned above, the decay rate is proportional to the product of squared vertices. The Higgs coupling to a fermion pair is proportional to $\frac{m_f}{V}$, where $V=(\sqrt{2}G_F)^{-\sfrac{1}{2}} = 246\:\text{GeV}$ and $m_f$ the fermion mass. The coupling between a quark and a gluon is given by the strong coupling constant $g_s$, which is usually of order 1, which will be assumed here as well. It grows with energy (asymptotic freedom), where the energy here would be $E = \frac{m_H}{2} = 62.5\:\text{GeV}$. Therefore, the decay rate is roughly:
+
+\begin{equation}
+	\Gamma_{H \:\rightarrow\: gg} \propto \sum_{f=q}\left|\frac{m_f}{V}\right|^2\Gamma_0
+\end{equation}
+
+where $\Gamma_0$ is some other decay rate with which to compare (as one is only interested in the branching ratio, $\Gamma_0$ will disappear and be of no interest). Similarly, the full width is about (smaller fermion masses are ignored):
+
+\begin{align*}
+	\Gamma_H &\propto \left|\frac{1}{V}\right|^2\left(\sum_f |m_f|^2 + |m_W|^4 + |m_Z|^4\right)\Gamma_0\\
+	&\approx  1810
+\end{align*}
+
+There are 
 
 \subsection{Suppression and forbidding of processes}
 All the processes are fine when considering conservation numbers (with the possible exception of 5, explained below) such as family numbers, charge and spin. However, there are some processes that are unfavourable due to other phenomenon.\\
@@ -124,6 +163,23 @@ All the processes are fine when considering conservation numbers (with the possi
 In process 5, it is suggested a anti-electron neutrino is created. This would violate lepton family number conservation, which is normally conserved, with the exception of neutrino oscillations. While it is a bit odd, the reaction is allowed, after some time. Momentarily after the reaction, however, there would have had to be a anti-muon neutrino, should the theoretical model be correct.\\
 
 Process 9 shows double Higgs production in an electron-positron annihilation. This brings about a problem due to the enormous difference in initial and final mass. So far, one has not been able to accelerate these leptons to such velocities, because of the curved accelerators in use today. With the promise of linear accelerators in the close future, reactions such as these may be a reality. However, theoretically these reactions can happen, given enough energy. This problem also holds for process 11, 12, and 20.
+
+\include{Diagrams}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[h]{0.3\textwidth}
+		\includegraphics[trim={0.5cm 22cm 10cm 0cm},width=\textwidth]{../Diagrams/D19.pdf}
+		\caption{$D^0\longleftrightarrow \bar{D}^0$ (WI)}
+		\label{fey:19}
+	\end{subfigure}
+	~
+	\begin{subfigure}[h]{0.3\textwidth}
+		\includegraphics[trim={0.5cm 22cm 10cm 0cm},width=\textwidth]{../Diagrams/D20.pdf}
+		\caption{$e^+e^- \rightarrow t\bar{t}Z^0$ (WI, (EM))}
+		\label{fey:20}
+	\end{subfigure}
+\end{figure}
 
 \subsection{Important processes}
 Process 3: Should one ever measure this process, it would mean the existence of supersymmetry, a theory that explains many of the mysterious free parameters in the standard model.\\
@@ -134,7 +190,7 @@ Process 8: \\
 
 Process 10: This process is of interest as it proves the quark changes type by the $W$-bosons, due to $W$ having charge, and becomes an anti-particle by a $Z_0$-boson, since it's neutral.\\
 
-Process 11:\\
+Process 11: Electron-positron annihilation provide important data on weak interactions. this reaction would provide 3 beams originating from each $Z$-boson, providing information on each.\\
 
 Process 14: The top-quark production present in this process is of significant importance, since the top quark offers a possibility to measure, indirectly, a single quark. This is because the top quark has too short lifetime to hadronize, and will only decay and form measurable jets.\\
 
@@ -238,24 +294,35 @@ The top quark is special in a few ways. First, and most important of all, is its
 In the Atlas overview (left side), one can see one candidate for top-pair production. There are two jets, blue and red, and two leptons deviating a bit from each jet, green and yellow. This fits nicely, as the apparent total momentum of each of these products appear to zero. Since there are two jets (bottom quarks) and two leptons ($W$-boson decay), this is a dileptonic decay.
 
 \subsection{Branching ratios of two top quark decays}
-The two top quark decays $t\:\rightarrow\text{b}+\text{c}\bar{\text{s}}$ and $t\:\rightarrow\text{b}+\tau+\nu_\tau$ occur by emission of a W-boson. As the top quark decays by weak interaction in both cases, the Sargent rule can be used to estimate the branching ratio of each process:
+The two top quark decays $t\:\rightarrow\text{b}+\text{c}\bar{\text{s}}$ and $t\:\rightarrow\text{b}+\tau+\nu_\tau$ occur by emission of a W-boson. The decay rate can be calculate in terms of the muon decay rate\footnote{Which is fine, as this is one of the best known decays.}, thanks to Sargent's law and the huge mass difference in initial and final states, through the relation:
 
 \begin{equation}
-W_i = \frac{\Gamma_i/\Gamma}{\tau} \approx G_F^2 (\Delta m)^5
+	\Gamma_{p_i} = \prod_j V_j \frac{m_t^5}{m_\mu^5}\Gamma_\mu
 \end{equation}
 
-where:
+where $V_j$ are the vertex factors of decay mode $i$. To give a clearer idea as to what this means, one can estimate the decay rates of the two decays of interest:
 
-\begin{itemize}
-	\item $W_i$ is the transition probability of decay process $i$.
-	\item $\frac{\Gamma_i}{\Gamma}$ is the branching ratio of process $i$.
-	\item $\tau$ is the average lifetime of the decaying particle. ($\tau \approx 5\times10^{-25}\text{s}$)
-	\item $G_F = 1.1663787(6)\times 10^{-5}(\hbar c)^3\:\text{GeV}^{-2}$ is the Fermi constant.
-	\item $\Delta m = m_i - \sum m_f$ is the difference in initial and final mass.
-\end{itemize}
+\begin{align}
+	\Gamma_1 &= 3|V_{tb}|^2|V_{cs}|^2\Gamma_0\\
+	\Gamma_2 &= |V_{tb}|^2\Gamma_0\\
+\end{align}
 
-Furthermore, the particle masses needed are $m_t \approx 173.21\:\text{GeV}$, $m_b \approx 4.18\:\text{GeV}$, $m_s \approx 95 \pm 5 \:\text{MeV}$, $m_c \approx 1.275\:\text{GeV}$ and $m_\tau \approx 1776.8\:\text{MeV}$.\\
-The only relevant difference between the two decays is the difference in final mass, which are $\Delta m \simeq m_t - m_b - m_\tau \simeq 167.25\:\text{GeV}$ and $\Delta m \simeq m_t - m_b - m_c - m_s \simeq 167.65\:\text{GeV}$.
+where $\Gamma_0 \equiv \frac{m_t^5}{m_\mu^5}\Gamma_\mu$. The factor of 3 is due to colour charges available to the $c\bar{s}$-pair\footnote{This is not the case for the top-transform to a $b$-quark, as the top alread has a specific colour.}. The full decay width is:
+
+\begin{align}
+	\Gamma_{\text{tot}} &= 3|V_{tb}|^2\left[1+\left(|V_{ud}|^2+|V_{us}|^2+|V_{ub}|^2+|V_{cd}|^2+|V_{cs}|^2+|V_{cb}|^2\right)\right]\Gamma_0\\
+	 &\simeq 3|V_{tb}|^2\times 3\times\Gamma_0\\
+	 &= 9|V_{tb}|^2\Gamma_0
+\end{align}
+
+i.e. the sum over all possible decay modes for the $W^+$-boson, times the initial top decay. Therefore, the branching ratios are roughly:
+
+\begin{align*}
+	\frac{\Gamma_1}{\Gamma_{\text{tot}}} &\simeq \frac{3|V_{tb}|^2|V_{cs}|^2\Gamma_0}{9|V_{tb}|^2\Gamma_0} = \frac{0.97344|^2}{3} \simeq 0.3158\\
+	\frac{\Gamma_2}{\Gamma_{\text{tot}}} &\simeq \frac{3|V_{tb}|^2\Gamma_0}{9|V_{tb}|^2\Gamma_0} = \frac{1}{9} \simeq 0.1111\ldots\\
+\end{align*}
+
+So, the quark decay is about 3 times more prone to occur than the leptonic decay.
 
 \section{\underline{Gauge theories}}
 \subsection{Symmetries and conservation laws of the standard model}
