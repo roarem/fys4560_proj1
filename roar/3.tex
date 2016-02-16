@@ -1,0 +1,107 @@
+\section{Gauge theories}
+  \subsection{Symmetries}
+
+    The Standard Model is based on the symmetry group $SU(3)\otimes %
+    SU(2) \otimes U(1)$.
+    \begin{itemize}
+      \item
+	$QED$ is described in the $U(1)$ group giving rise to the photon as a mediating gauge boson.
+
+      \item
+	$WI$ from $SU(2)$ which produces three bosons, $W^{\pm},\,W^0$, the $Z$ will come after
+    	combining $SU(2)_L\otimes U(1)_Y$ into electro weak theory. In electro weak theory it can
+	be shown conservation of isospin.  
+
+      \item
+	And finally the $QCD$ comes from the $SU(3)_C$ where the 8 bosons are gluons,
+    	and it holds the conservation of the quantum number color. 
+    \end{itemize} 
+    
+    The fermions are organized in three families as seen below.
+    \[%
+        \begin{bmatrix}
+          \nu_e & u \\
+          e^- & d'
+        \end{bmatrix}%
+        ,\quad%
+        \begin{bmatrix}
+          \nu_{\mu} & c\\
+          \mu^- & s'
+        \end{bmatrix}%
+        ,\quad%
+        \begin{bmatrix}
+          \nu_{\tau} & t\\
+          \tau^- & b'
+        \end{bmatrix}%
+    \]
+    And each family can be divided into left handed doublets and right handed
+    singlets $SU(2)_L$. There is the foce mediators $g$, $W$, $Z$, $\gamma$ and 
+    the $H$ boson which gives particles mass.
+    \paragraph{GUT}
+    In $GUT$ the coupling constants will all be the same, meaning that all the forces will
+    have equal strenght in their coupling. These are the conditions are considered to be
+    available at very high energies, as in the start of our universe.
+
+    \subsection{Gauge principle and $QCD$}
+      
+      The gauge principle is a requirement that the phase invariance should hold locally.
+      These transformations give rise to mediator bosons.
+      
+      Starting with the free Lagrangian
+      \begin{equation}
+	\mathcal{L}_0 = \sum_f \bar{q}_f(i\gamma^{\mu}\partial_{\mu} - m_f)q_f
+      \end{equation}
+      where $q^{\alpha}_f \equiv (q^1_f,q^2_f,q^3_f)$ has colour $\alpha$ and flavour $f$. 
+      This Lagrangian is invariant under global transformations in $SU(3)_C$ in colour space,
+      \begin{equation}
+	q^{\alpha}_f \rightarrow U^{\alpha}_{\beta}q^{\beta}_f,\quad%
+	U= \exp\left\{i\frac{\lambda^a}{2}\theta_a\right\}
+      \end{equation}
+      here $U$ are the $SU(3)_C$ matrices, $\lambda$ are the generators in the fundemental
+      representation.
+
+      Now we require the Lagrangian to be also invariant under local $SU(3)_C$ transformations,
+      which is done in the same way as $QED$, by changing the deriviatives to covariant objects.
+      \begin{equation}
+	D^{\mu}q_f \equiv \big[ \partial^{\mu} + ig_s G^{\mu}(x)\big]q_f
+      \end{equation}
+      Here the $G^{\mu}_a$ are the eight different bosons in $QCD$, also called gluons.
+
+      Since we want the transformation to be exactly like the transform of the colour-vector $q_f$,
+      we get
+      \begin{flalign}
+	&(D^{\mu})' \rightarrow UD^{\mu}U^{\dagger}\\
+	&(G^{\mu}_a)' \rightarrow UG^{\mu}U^{\dagger} + \frac{i}{g_s}(\partial^{\mu}U)U^{\dagger}
+      \end{flalign}
+	
+      Then under an infinitesimal $SU(3)_C$ transformation of the quarks and bosons
+      \begin{flalign}
+	&U \approx 1 + i\left(\frac{\lambda^a}{2}\right)_{\alpha\beta}\\
+	&(q^{\alpha}_f)' \rightarrow q^{\alpha}_f +%
+	i\left(\frac{\lambda^a}{2}\right)_{\alpha\beta}\delta\theta_aq^{\beta}_f\\
+	&(G^{\mu}_a)' \rightarrow \frac{1}{g_s}\partial^{\mu}(\delta\theta_a)%
+	- f^{abc}\delta\theta)_bG^{\mu}_c
+      \end{flalign}
+
+      We need to create field strengths of the gluon fields who transform homogeneously 
+      \[ (G^{\mu\nu})' = UG^{\mu\nu}U^{\dagger}\]
+      
+      \begin{flalign}
+	&G^{\mu\nu}(x) \equiv \frac{\lambda^a}{2}G^{\mu\nu}_a(x)\\
+	&G^{\mu\nu}_a(x) = \partial^{\mu}G^{\nu}_a - \partial^{\nu}_a%
+	- g_s f^{abc}G^{\mu}_b G^{\nu}_c
+      \end{flalign}
+      and taking the trace of the kinetic term og the gluon fields %
+      $\operatorname{Tr}[G^{\mu\nu}G_{\mu\nu}] = \frac{1}{2} G^{\mu\nu}_a G_{\mu\nu}^a$.
+      All this results in the Lagrangian of $QCD$
+      \begin{equation}
+	\mathcal{L}_{QCD} \equiv -\frac{1}{4}G^{\mu\nu}_a G^a_{\mu\nu} + %
+	\sum_f \bar{q}_f(i\gamma^{\mu}D_{\mu} - m_f)q_f
+      \end{equation}
+      
+      As with $QED$ there is no invariant mass term for the gluon fields, making them massless
+      spin-1 bosons. There is also self interacting terms due to the non-commutativity of the
+      $SU(3)_C$ matrices, which do not occur in $QED$.
+
+      
+

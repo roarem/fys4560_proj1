@@ -6,31 +6,21 @@
 \unitlength = 1cm
 \begin{figure*}[h]
 \begin{fmffile}{eeqqgg}
-  \begin{fmfgraph*}(15,4)
+  \begin{fmfgraph*}(6,4)
+    \fmfstraight
+    \fmfleft{ig}
+    \fmfright{oW,ot,ob}
 
-    \fmfleft{e1,e2}
-    \fmfright{g1,g2}
+    \fmf{curly}{ig,v1}
+    \fmf{fermion,label=$b$}{v1,ob}
+    \fmf{fermion,label=$\bar{b}$}{v2,v1}
+     
+    \fmf{dashes}{v2,oW}
+    \fmf{fermion}{ot,v2}
 
-    \fmf{fermion}{e1,ipz}
-    \fmf{fermion}{ipz,e2}
-
-    \fmf{dashes,label=$\gamma,,Z$}{ipz,opz}
-    
-    \fmf{fermion,left=0.7}{opz,ih}
-    \fmf{fermion,left=0.7}{ih,opz}
-
-    \fmf{dashes,label=$H$}{ih,oh}
-
-    \fmf{fermion,left=0.7}{oh,g}
-    \fmf{fermion,left=0.7}{g,oh}
-
-    \fmf{curly}{g,g1}
-    \fmf{curly}{g,g2}
-
-    \fmflabel{$e^-$}{e1}
-    \fmflabel{$e^+$}{e2}
-    \fmflabel{$g$}{g1}
-    \fmflabel{$g$}{g2}
+    \fmflabel{$g$}{ig}
+    \fmflabel{$W^+$}{oW}
+    \fmflabel{$\bar{t}$}{ot}
 
 
   \end{fmfgraph*}
